@@ -1,0 +1,72 @@
+
+.grid-portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.card-projeto {
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-projeto:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.imagem-projeto {
+    height: 180px;
+    background-color: #ecf0f1;
+    overflow: hidden;
+}
+
+.imagem-projeto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.conteudo-projeto {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.conteudo-projeto h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    color: #5f020a;
+    font-size: 1.2rem;
+}
+
+.conteudo-projeto p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.links-projeto {
+    display: flex;
+    gap: 15px;
+}
+
+.links-projeto a {
+    text-decoration: none;
+    color: #3498db;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color 0.2s;
+}
+
+.links-projeto a:hover {
+    color: #2980b9;
+}
